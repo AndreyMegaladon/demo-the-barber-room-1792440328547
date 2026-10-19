@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt — The Barber Room</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#111111] text-gray-100 font-sans">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#111111]/90 backdrop-blur-md border-b border-[#C5A059]/30 h-20 flex items-center justify-between px-6 lg:px-12">
+        <a href="index.html" class="text-2xl font-bold tracking-wider text-[#C5A059]">THE BARBER ROOM</a>
+        <div class="hidden md:flex items-center space-x-2 text-sm font-medium">
+            <a href="index.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Avaleht</a>
+            <a href="about.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Meist</a>
+            <a href="services.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Teenused</a>
+            <a href="gallery.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Galerii</a>
+            <a href="booking.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Broneeri</a>
+            <a href="contacts.html" class="bg-[#C5A059] text-black rounded-lg px-4 py-2 transition">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="max-w-6xl mx-auto px-6 py-4 text-sm text-[#C5A059]">
+        Avaleht > Kontakt > [Praegune]
+    </div>
+
+    <!-- Contacts Section -->
+    <section class="py-20 px-6 max-w-4xl mx-auto">
+        <h1 class="text-4xl font-bold mb-12 text-[#C5A059] text-center">Võta Ühendust</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 bg-zinc-900 border border-zinc-800 p-8 rounded-3xl">
+            <div>
+                <h2 class="text-2xl font-bold mb-6 text-white">Kontaktandmed</h2>
+                <p class="mb-4 text-gray-300"><strong>Aadress:</strong> Lai 44, Tallinn, 10133</p>
+                <p class="mb-4 text-gray-300"><strong>Telefon:</strong> +37255567955</p>
+                <p class="mb-4 text-gray-300"><strong>E-mail:</strong> thebarberroom72@gmail.com</p>
+                <div class="mt-6">
+                    <a href="https://www.facebook.com/thebarberroom72/" target="_blank" class="text-[#C5A059] hover:underline font-semibold">Külasta meie Facebooki lehte</a>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold mb-6 text-white">Lahtiolekuajad</h2>
+                <p class="text-gray-300 leading-relaxed">
+                    Esmaspäev: 10:00 - 18:45<br>
+                    Teisipäev: 12:00 - 18:45<br>
+                    Kolmapäev: 10:00 - 20:00<br>
+                    Reede: 10:00 - 20:00<br>
+                    (Neljapäev, Laupäev, Pühapäev: Suletud)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-12 px-6 border-t border-zinc-800">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-sm">© The Barber Room. Kõik õigused kaitstud.</p>
+        </div>
+    </footer>
+
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
