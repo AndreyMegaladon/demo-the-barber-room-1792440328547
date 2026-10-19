@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Barber Room — A gentleman's barber in Tallinn</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#111111] text-gray-100 font-sans">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#111111]/90 backdrop-blur-md border-b border-[#C5A059]/30 h-20 flex items-center justify-between px-6 lg:px-12">
+        <a href="index.html" class="text-2xl font-bold tracking-wider text-[#C5A059]">THE BARBER ROOM</a>
+        <div class="hidden md:flex items-center space-x-2 text-sm font-medium">
+            <a href="index.html" class="bg-[#C5A059] text-black rounded-lg px-4 py-2 transition">Avaleht</a>
+            <a href="about.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Meist</a>
+            <a href="services.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Teenused</a>
+            <a href="gallery.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Galerii</a>
+            <a href="booking.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Broneeri</a>
+            <a href="contacts.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-[80vh] relative bg-cover bg-center flex items-center justify-center px-6" style="background-image: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1920&q=80');">
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="relative z-10 max-w-4xl text-center">
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white mb-6">The Barber Room — A gentleman's barber in the Old Town of Tallinn</h1>
+            <p class="text-lg md:text-2xl text-gray-300 mb-8">Traditional haircuts meet modern style in a notorious 1930's building.</p>
+            <a href="booking.html" class="inline-block bg-[#C5A059] hover:bg-[#b08d48] text-black font-semibold px-8 py-4 rounded-xl text-lg shadow-2xl transition">Broneeri aeg</a>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="max-w-6xl mx-auto px-6 py-4 text-sm text-[#C5A059]">
+        Avaleht > [Praegune]
+    </div>
+
+    <!-- Featured Services -->
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12 text-[#C5A059]">Populaarsed Teenused</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-zinc-900 border border-zinc-800 rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden p-6">
+                <span class="text-xs font-semibold uppercase tracking-wider text-[#C5A059]">Juukselõikus</span>
+                <h3 class="text-xl font-bold mt-2 mb-3 text-white">Men's Haircut / Meeste juukselõikus</h3>
+                <p class="text-gray-400 text-sm mb-4">Standard men's haircut tailored to your style.</p>
+                <div class="text-2xl font-bold text-[#C5A059]">€35</div>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden p-6">
+                <span class="text-xs font-semibold uppercase tracking-wider text-[#C5A059]">Combos</span>
+                <h3 class="text-xl font-bold mt-2 mb-3 text-white">Men's haircut and beard trim</h3>
+                <p class="text-gray-400 text-sm mb-4">Full package including haircut and beard trim.</p>
+                <div class="text-2xl font-bold text-[#C5A059]">€45</div>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden p-6">
+                <span class="text-xs font-semibold uppercase tracking-wider text-[#C5A059]">Habe</span>
+                <h3 class="text-xl font-bold mt-2 mb-3 text-white">Beard Trim / Habeme piiramine</h3>
+                <p class="text-gray-400 text-sm mb-4">Professional beard shaping and trimming.</p>
+                <div class="text-2xl font-bold text-[#C5A059]">€20</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-zinc-900 py-16 px-6 text-center border-t border-b border-zinc-800">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold mb-4 text-white">Valmis uueks stiiliks?</h2>
+            <p class="text-gray-400 mb-8">Külasta meid Tallinna vanalinnas aadressil Lai 44.</p>
+            <a href="booking.html" class="bg-[#C5A059] hover:bg-[#b08d48] text-black font-bold px-8 py-4 rounded-xl text-lg shadow-xl transition">Võta aeg</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-12 px-6 border-t border-zinc-800">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4 text-[#C5A059]">The Barber Room</h3>
+                <p class="text-sm">Lai 44, Tallinn, 10133</p>
+                <p class="text-sm mt-2">Tel: +37255567955</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Lahtiolekuajad</h3>
+                <p class="text-sm">E 10:00 - 18:45</p>
+                <p class="text-sm">T 12:00 - 18:45</p>
+                <p class="text-sm">K, R 10:00 - 20:00</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Sotsiaalmeedia</h3>
+                <a href="https://www.facebook.com/thebarberroom72/" target="_blank" class="text-[#C5A059] hover:underline text-sm">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
