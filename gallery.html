@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerii — The Barber Room</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#111111] text-gray-100 font-sans">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#111111]/90 backdrop-blur-md border-b border-[#C5A059]/30 h-20 flex items-center justify-between px-6 lg:px-12">
+        <a href="index.html" class="text-2xl font-bold tracking-wider text-[#C5A059]">THE BARBER ROOM</a>
+        <div class="hidden md:flex items-center space-x-2 text-sm font-medium">
+            <a href="index.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Avaleht</a>
+            <a href="about.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Meist</a>
+            <a href="services.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Teenused</a>
+            <a href="gallery.html" class="bg-[#C5A059] text-black rounded-lg px-4 py-2 transition">Galerii</a>
+            <a href="booking.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Broneeri</a>
+            <a href="contacts.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="max-w-6xl mx-auto px-6 py-4 text-sm text-[#C5A059]">
+        Avaleht > Galerii > [Praegune]
+    </div>
+
+    <!-- Gallery Grid -->
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <h1 class="text-4xl font-bold mb-12 text-[#C5A059] text-center">Meie Galerii</h1>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="aspect-square overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Barbershop" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" alt="Barbershop" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1512864696010-b5cc4107fad1?auto=format&fit=crop&w=800&q=80" alt="Barbershop" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1622287162645-f092306f153a?auto=format&fit=crop&w=800&q=80" alt="Barbershop" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=800&q=80" alt="Barbershop" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+            <div class="aspect-square overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=800&q=80" alt="Barbershop" class="w-full h-full object-cover hover:scale-110 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-12 px-6 border-t border-zinc-800">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-sm">© The Barber Room. Kõik õigused kaitstud.</p>
+        </div>
+    </footer>
+
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
