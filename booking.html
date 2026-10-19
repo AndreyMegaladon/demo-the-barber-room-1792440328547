@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broneeri — The Barber Room</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#111111] text-gray-100 font-sans">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-[#111111]/90 backdrop-blur-md border-b border-[#C5A059]/30 h-20 flex items-center justify-between px-6 lg:px-12">
+        <a href="index.html" class="text-2xl font-bold tracking-wider text-[#C5A059]">THE BARBER ROOM</a>
+        <div class="hidden md:flex items-center space-x-2 text-sm font-medium">
+            <a href="index.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Avaleht</a>
+            <a href="about.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Meist</a>
+            <a href="services.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Teenused</a>
+            <a href="gallery.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Galerii</a>
+            <a href="booking.html" class="bg-[#C5A059] text-black rounded-lg px-4 py-2 transition">Broneeri</a>
+            <a href="contacts.html" class="hover:bg-[#C5A059]/20 text-gray-200 rounded-lg px-4 py-2 transition">Kontakt</a>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="max-w-6xl mx-auto px-6 py-4 text-sm text-[#C5A059]">
+        Avaleht > Broneeri > [Praegune]
+    </div>
+
+    <!-- Booking Form Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-2xl mx-auto bg-zinc-900 border border-zinc-800 rounded-3xl shadow-2xl p-10">
+            <h1 class="text-3xl font-bold mb-8 text-[#C5A059] text-center">Broneeri Aeg</h1>
+            <form action="https://formsubmit.co/thebarberroom72@gmail.com" method="POST" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-medium mb-2 text-gray-300">Nimi</label>
+                    <input type="text" name="name" required class="w-full px-5 py-4 bg-black border-2 border-zinc-800 rounded-xl focus:border-[#C5A059] focus:ring-4 focus:ring-[#C5A059]/20 text-white">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2 text-gray-300">Telefon</label>
+                    <input type="tel" name="phone" required class="w-full px-5 py-4 bg-black border-2 border-zinc-800 rounded-xl focus:border-[#C5A059] focus:ring-4 focus:ring-[#C5A059]/20 text-white">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2 text-gray-300">Teenus</label>
+                    <select name="service" class="w-full px-5 py-4 bg-black border-2 border-zinc-800 rounded-xl focus:border-[#C5A059] focus:ring-4 focus:ring-[#C5A059]/20 text-white">
+                        <option>Men's Haircut / Meeste juukselõikus (€35)</option>
+                        <option>Men's haircut and beard trim (€45)</option>
+                        <option>Beard Trim / Habeme piiramine (€20)</option>
+                        <option>Buzz Cut - 0mm Fade (€25)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2 text-gray-300">Kuupäev ja aeg</label>
+                    <input type="datetime-local" name="datetime" required class="w-full px-5 py-4 bg-black border-2 border-zinc-800 rounded-xl focus:border-[#C5A059] focus:ring-4 focus:ring-[#C5A059]/20 text-white">
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-[#C5A059] to-amber-600 text-black py-5 rounded-xl text-lg font-bold hover:shadow-xl transition">Kinnita broneering</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 py-12 px-6 border-t border-zinc-800">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="text-sm">© The Barber Room. Kõik õigused kaitstud.</p>
+        </div>
+    </footer>
+
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
